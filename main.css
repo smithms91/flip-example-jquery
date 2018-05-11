@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/detroitSkyline.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#card_container {
+  max-width: 24rem;
+  height: 24rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(150, 150, 150, 0.9);
+  position: relative;
+}
+
+.btn_start {
+  padding: 10px;
+  border-radius: 12px;
+  width: 100px;
+  margin: 10px;
+  font-family: 'Yatra One', cursive;
+  font-size: 20px;
+}
+.btn_start:hover {
+  background-color: orangered;
+}
+
+.reset {
+  border-radius: 12px;
+  width: 100px;
+  margin-bottom: 10px;
+  font-family: 'Yatra One', cursive;
+  font-size: 20px;
+}
+.reset:hover {
+  background-color: orangered;
+}
+
+.card {
+  width: 65px;
+  height: 65px;
+  margin: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+#cover {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 384px;
+  background-color: rgba(0, 117, 184, 0.9);
+  position: absolute;
+  top: 388px;
+}
+
+.flexInstructions {
+  display: flex;
+  background-color: rgba(150, 150, 150, .70);
+  align-items: center;
+}
+
+#cover h1 {
+  font-family: 'Passion One', cursive;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+p {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  margin: 20px;
+}
+
+.everything {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  top: 20px;
+  color: white;
+  font-family: 'Yatra One', cursive;
+  text-align: center;
+  padding: 10px;
+}
+
+.score {
+  color: white;
+}
+
+@media only screen and (min-width:768px) {
+  .title h1 {
+    font-size: 55px;
+  }
+  #card_container {
+    max-width: 600px;
+    height: 585px;
+  }
+  .card {
+    width: 115px;
+    height: 115px;
+    margin: 5px;
+  }
+  .reset {
+    margin-bottom: 40px;
+    height: 50px;
+  }
+  .score {
+    margin: 30px;
+  }
+  #cover {
+    height: 560px;
+    width: 500px;
+    top: 360px;
+  }
+  .flexInstructions{
+    height: 300px;
+  }
+  .flexInstructions p {
+    font-size: 30px;
+  }
+  #cover h1{
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width:1200px) {
+  body {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+  #cover {
+    height: 525px;
+    width: 700px;
+    top: 266px;
+  }
+  #card_container {
+    max-width: 700px;
+    height: 550px;
+  }
+  .card {
+    height: 120px;
+    position: fixed;
+    width: 120px;
+    margin: 10px;
+  }
+  p {
+    height: 225px;
+    width: 500px;
+    font-size: 30px;
+  }
+  #cover h1{
+    font-size: 60px;
+  }
+  .reset {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
